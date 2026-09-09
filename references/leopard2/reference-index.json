@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "recorded_on": "2026-09-09",
+  "primary_source_policy": "User-supplied four-view drawing controls the model silhouette and dimension targets. Related photographs supplement unmarked exterior details; they do not identify the exact PT chassis or T turret depicted in the scan.",
+  "files": [
+    {
+      "file": "reference_four_views.png",
+      "role": "primary_dimensioned_drawing",
+      "source_type": "user_attachment",
+      "original_path": "C:/Users/洪恒达/AppData/Local/Temp/codex-clipboard-35e8ca1c-1a6b-45aa-aaf7-a279cb46fd53.png",
+      "original_filename": "codex-clipboard-35e8ca1c-1a6b-45aa-aaf7-a279cb46fd53.png",
+      "author": null,
+      "license": "Not supplied. User-provided modeling reference; no public-domain or redistribution claim is made.",
+      "source_url": null,
+      "sha256": "FDB9DFD06ED8045D92982924FABA166E4230F78E6466A8CDC7B104D59606F58F",
+      "bytes": 452974,
+      "modifications": "None; copied byte-for-byte from the user attachment."
+    },
+    {
+      "file": "Leopard_2_Prototyp_PT15_T02_105mm_Sonaz_CC_BY_3.jpg",
+      "role": "supplemental_prototype_exterior_photo",
+      "title": "Leopard 2 Prototyp PT15 T02 105mm",
+      "author": "Sonaz",
+      "created_on": "2009-09-19",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Leopard_2_Prototyp_PT15_T02_105mm.jpg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Leopard_2_Prototyp_PT15_T02_105mm.jpg",
+      "license": "CC BY 3.0 Unported (selected from the source's CC BY 3.0 / GFDL dual-license options)",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/",
+      "attribution": "Leopard 2 Prototyp PT15 T02 105mm, photograph by Sonaz, 2009, Wikimedia Commons, CC BY 3.0. Original photograph, unmodified.",
+      "sha256": "50AC3DD1243AC67D3CD82ECDDB0C8D56643DE15B33E0333ED3F7A4DBE7D3FE7A",
+      "bytes": 5212023,
+      "modifications": "None; original full-resolution JPEG downloaded for visual reference.",
+      "source_page_checked": true,
+      "interpretation_limit": "Related early prototype. This photo does not establish that the user's drawing depicts PT15/T02."
+    },
+    {
+      "file": "Leopard_2_Yuma_1975_MVNelson_Public_Domain.jpg",
+      "role": "supplemental_period_prototype_photo",
+      "title": "Early Leopard 2 Tank Prototype at Yuma Proving Ground, 1975",
+      "author": "M. V. Nelson",
+      "created_on": "1975-09-15",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Early_Leopard_2_Tank_Prototype_at_Yuma_Proving_Ground,_1975.jpg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/8/83/Early_Leopard_2_Tank_Prototype_at_Yuma_Proving_Ground%2C_1975.jpg",
+      "archive_source_url": "https://emu.usahec.org/alma/multimedia/1635834/20181430MNBT1036356700F0000000391464I010.pdf",
+      "archive_source_checked": false,
+      "license": "Public domain in the United States: work of the United States federal government, as stated by Wikimedia Commons.",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "attribution": "Early Leopard 2 Tank Prototype at Yuma Proving Ground, 15 September 1975, M. V. Nelson / US Army; Wikimedia Commons archival reproduction.",
+      "sha256": "9794F2AC46372BF8CCFBE654381A2CFD3B9B31A0FB61143C80E41DE15CE07C6D",
+      "bytes": 3264369,
+      "modifications": "No project modifications. Downloaded Commons version includes the source repository's historical scan/color processing.",
+      "source_page_checked": true
+    }
+  ],
+  "supplemental_articles": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Leopard_2#Prototype_development",
+      "purpose": "Early prototype family, original welded turret, wheel layout and prototype gun variation.",
+      "checked": true
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Leopard_1#Leopard_1A3",
+      "purpose": "Negative identification comparison; Leopard 1 dimensions were not substituted for the drawing.",
+      "checked": true
+    }
+  ]
+}

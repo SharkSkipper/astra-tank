@@ -1,0 +1,64 @@
+:root {
+  color-scheme: dark;
+  --bg: #0d1115;
+  --panel: #151b20;
+  --panel-2: #1b2329;
+  --line: #2b363e;
+  --text: #e9eef2;
+  --muted: #94a1ab;
+  --steam: #dca34e;
+  --emu: #75c7d7;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font-family: Inter, "Microsoft YaHei", sans-serif; }
+.app-shell { width: min(1280px, 100%); margin: 0 auto; padding: 28px 24px 44px; }
+.topbar { display: flex; align-items: flex-start; justify-content: space-between; gap: 24px; padding-bottom: 20px; }
+.eyebrow { margin: 0 0 7px; color: var(--steam); font-size: 11px; letter-spacing: .15em; }
+h1, h2, p { margin-top: 0; }
+h1 { margin-bottom: 6px; font-size: clamp(24px, 4vw, 38px); letter-spacing: 0; }
+h2 { margin-bottom: 0; font-size: 20px; }
+.subtitle { margin-bottom: 0; color: var(--muted); font-size: 14px; }
+.status { border: 1px solid var(--line); padding: 9px 12px; color: var(--muted); font-size: 12px; white-space: nowrap; }
+.viewer-panel { position: relative; overflow: hidden; min-height: 560px; border: 1px solid var(--line); background: #080b0e; }
+#scene { display: block; width: 100%; height: 560px; }
+.view-hud { position: absolute; left: 18px; right: 18px; bottom: 16px; display: flex; gap: 18px; align-items: center; color: var(--muted); font-size: 12px; pointer-events: none; }
+.view-hud span:first-child { color: var(--steam); }
+.view-hud span:nth-child(2) { color: var(--emu); }
+.view-hud span:last-child { margin-left: auto; }
+.controls { display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 14px 0; border-bottom: 1px solid var(--line); }
+.control-group { display: flex; flex-wrap: wrap; gap: 8px; }
+button { border: 1px solid var(--line); background: var(--panel); color: var(--text); padding: 9px 12px; border-radius: 4px; cursor: pointer; font: inherit; font-size: 13px; }
+button:hover, button.active { border-color: var(--steam); background: #2a261d; }
+.range-control { display: flex; align-items: center; gap: 10px; color: var(--muted); font-size: 13px; }
+.range-control input { accent-color: var(--steam); width: 160px; }
+.part-controls { display: grid; grid-template-columns: 200px 1fr; gap: 24px; padding: 24px 0 10px; }
+.toggle-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(145px, 1fr)); gap: 8px; }
+.toggle { display: flex; align-items: center; gap: 8px; padding: 9px 10px; border: 1px solid var(--line); background: var(--panel); color: var(--muted); font-size: 12px; }
+.toggle input { accent-color: var(--emu); }
+.inspection-panel { padding: 24px 0 8px; border-top: 1px solid var(--line); }
+.inspection-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 20px; }
+.selection-status { border: 1px solid var(--line); padding: 8px 10px; color: var(--muted); font-size: 12px; }
+.inspection-grid { display: grid; grid-template-columns: minmax(260px, 0.8fr) minmax(360px, 1.2fr); gap: 24px; margin-top: 16px; }
+.metadata-list { margin: 0; border: 1px solid var(--line); background: var(--panel); }
+.metadata-list > div { display: grid; grid-template-columns: 92px 1fr; gap: 14px; padding: 11px 13px; border-bottom: 1px solid var(--line); }
+.metadata-list > div:last-child { border-bottom: 0; }
+.metadata-list dt { color: var(--muted); font-size: 12px; }
+.metadata-list dd { margin: 0; overflow-wrap: anywhere; font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size: 12px; }
+.reference-list { min-width: 0; }
+.reference-list h3 { margin: 0 0 10px; font-size: 14px; }
+.reference-links { display: grid; gap: 7px; color: var(--muted); font-size: 12px; line-height: 1.5; }
+.reference-links a { color: var(--emu); }
+.reference-links a:last-child { margin-left: 4px; color: var(--steam); }
+.footer-note { padding-top: 18px; color: var(--muted); font-size: 12px; line-height: 1.6; }
+@media (max-width: 720px) {
+  .app-shell { padding: 20px 14px 30px; }
+  .topbar, .controls, .part-controls, .inspection-grid { display: block; }
+  .status { display: inline-block; margin-top: 14px; }
+  .viewer-panel, #scene { min-height: 420px; height: 420px; }
+  .control-group { margin-bottom: 14px; }
+  .part-controls > div:first-child { margin-bottom: 16px; }
+  .inspection-grid > div:first-child { margin-bottom: 16px; }
+  .inspection-head { align-items: stretch; }
+  .view-hud { left: 10px; right: 10px; gap: 8px; font-size: 10px; }
+}

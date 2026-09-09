@@ -1,0 +1,87 @@
+{
+  "project": "dual-track-real-train-modeling",
+  "status": "preproduction_ready_awaiting_real_astra_capture",
+  "duration_seconds": 180,
+  "format": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "aspect_ratio": "16:9",
+    "narration": "Chinese human narration"
+  },
+  "parallel_rules": {
+    "left_track": "QJ 2655",
+    "right_track": "CR400AF",
+    "same_camera": true,
+    "same_scale": true,
+    "same_lighting": true,
+    "no_spatial_intersection": true
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "start": 0,
+      "duration": 10,
+      "evidence": ["assets/two_track_baseline_preview.png", "final_two_track_capture"],
+      "requires_real_astra_capture": false
+    },
+    {
+      "id": "references",
+      "start": 10,
+      "duration": 18,
+      "evidence": ["references/reference-index.csv", "references/qj", "references/cr400af"],
+      "requires_real_astra_capture": false
+    },
+    {
+      "id": "parallel_initial_build",
+      "start": 28,
+      "duration": 54,
+      "evidence": ["runs/*/screen-recording.mkv", "runs/*/prompt.md", "runs/*/checkpoints/v00_ai_initial.blend"],
+      "requires_real_astra_capture": true
+    },
+    {
+      "id": "audit",
+      "start": 82,
+      "duration": 28,
+      "evidence": ["runs/*/run-log.csv", "runs/*/manual-interventions.md", "models/model-manifest.json"],
+      "requires_real_astra_capture": true
+    },
+    {
+      "id": "repair_and_handoff",
+      "start": 110,
+      "duration": 28,
+      "evidence": ["runs/*/checkpoints/v01_ai_repair.blend", "runs/*/manual-interventions.md"],
+      "requires_real_astra_capture": true
+    },
+    {
+      "id": "comparison",
+      "start": 138,
+      "duration": 27,
+      "evidence": ["models/train_pair_master.blend", "models/QJ_steam_locomotive.glb", "models/CR400AF_emu.glb"],
+      "requires_real_astra_capture": false
+    },
+    {
+      "id": "boundary",
+      "start": 165,
+      "duration": 15,
+      "evidence": ["viewer/index.html", "video/script_zh.md", "real_run_metrics"],
+      "requires_real_astra_capture": true
+    }
+  ],
+  "provenance_labels": [
+    "真实参考资料",
+    "Astra生成",
+    "人工修复",
+    "程序化结构基线",
+    "艺术化简化"
+  ],
+  "current_inputs": {
+    "reference_archive": "ready",
+    "structured_baseline_models": "ready",
+    "web_viewer": "ready",
+    "real_astra_screen_recordings": "missing",
+    "real_astra_checkpoints": "missing",
+    "human_voice_recording": "missing",
+    "final_video_render": "blocked_until_real_inputs_exist"
+  }
+}

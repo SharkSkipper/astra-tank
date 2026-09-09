@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>双轨列车模型查看器</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+          "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">TRACEABLE TRAIN MODELING</p>
+          <h1>双轨列车模型查看器</h1>
+          <p class="subtitle">前进型蒸汽机车 · CR400AF 动车 · 独立部件层级</p>
+        </div>
+        <div class="status" id="status">正在加载模型</div>
+      </header>
+
+      <section class="viewer-panel" aria-label="3D模型视图">
+        <canvas id="scene"></canvas>
+        <div class="view-hud">
+          <span>左轨 QJ 2655</span>
+          <span>右轨 CR400AF</span>
+          <span id="object-count">0 个部件</span>
+        </div>
+      </section>
+
+      <section class="controls" aria-label="模型控制">
+        <div class="control-group">
+          <button data-mode="both" class="active">显示两车</button>
+          <button data-mode="qj">只看蒸汽机车</button>
+          <button data-mode="cr400af">只看动车</button>
+          <button id="reset-camera">重置视角</button>
+        </div>
+        <label class="range-control" for="explode">
+          <span>部件拆解</span>
+          <input id="explode" type="range" min="0" max="1" step="0.01" value="0" />
+        </label>
+      </section>
+
+      <section class="part-controls">
+        <div>
+          <p class="eyebrow">COMPONENT VISIBILITY</p>
+          <h2>部件显示</h2>
+        </div>
+        <div id="component-toggles" class="toggle-grid"></div>
+      </section>
+
+      <section class="inspection-panel" aria-label="部件追溯检查">
+        <div class="inspection-head">
+          <div>
+            <p class="eyebrow">TRACEABILITY</p>
+            <h2 id="selection-title">部件检查</h2>
+          </div>
+          <div id="selection-status" class="selection-status">暂无选择</div>
+        </div>
+        <div class="inspection-grid">
+          <dl class="metadata-list">
+            <div><dt>对象</dt><dd id="selection-name">-</dd></div>
+            <div><dt>部件角色</dt><dd id="selection-role">-</dd></div>
+            <div><dt>车型</dt><dd id="selection-subject">-</dd></div>
+          </dl>
+          <div class="reference-list">
+            <h3>参考资料</h3>
+            <div id="reference-links" class="reference-links">-</div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer-note">
+        该查看器展示的是项目内的结构化基线模型。正式 Astra 实测版本应保留在 runs/ 中，并用独立日志标注。
+      </footer>
+    </main>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

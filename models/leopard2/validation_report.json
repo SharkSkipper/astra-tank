@@ -1,0 +1,182 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "check": "Meters and Z-up scene",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "Separate editable exterior meshes",
+      "pass": true,
+      "detail": 1831
+    },
+    {
+      "check": "Packed original reference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "Embedded editing instructions",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "Live editable bevel modifiers",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "Finite nonempty geometry",
+      "pass": true,
+      "detail": {
+        "nonfinite": [],
+        "empty": []
+      }
+    },
+    {
+      "check": "Overall length within 5 mm of 9.613 m",
+      "pass": true,
+      "detail": 9.61299991607666
+    },
+    {
+      "check": "Overall width within 2 mm of 3.700 m",
+      "pass": true,
+      "detail": 3.700000047683716
+    },
+    {
+      "check": "Track pads grounded; no stray components below ground",
+      "pass": true,
+      "detail": -3.725290298461914e-09
+    },
+    {
+      "check": "L seven paired wheel stations",
+      "pass": true,
+      "detail": {
+        "stations": 7,
+        "tires": 14
+      }
+    },
+    {
+      "check": "L 85 individually named linked shoes",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "L 1.3925 m track center",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "L correct first road wheel origin",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "R seven paired wheel stations",
+      "pass": true,
+      "detail": {
+        "stations": 7,
+        "tires": 14
+      }
+    },
+    {
+      "check": "R 85 individually named linked shoes",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "R 1.3925 m track center",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "R correct first road wheel origin",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "Turret pivot on race axis",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "Gun pivot at 2.009 m above ground",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "Driver curves valid",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "Turret yaw moves gun correctly",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "Turret yaw carries roof fittings",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "Turret yaw leaves hull fixed",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "Gun elevation uses mantlet pivot",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "Gun elevation leaves sight and turret fixed",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "Neutral pose restores exact baseline",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "Valid GLB 2 container",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "GLB excludes studio and reference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "GLB contains model hierarchy and separate parts",
+      "pass": true,
+      "detail": 1916
+    }
+  ],
+  "evaluated_bbox_m": {
+    "min": [
+      -5.2179999351501465,
+      -1.850000023841858,
+      -3.725290298461914e-09
+    ],
+    "max": [
+      4.394999980926514,
+      1.850000023841858,
+      3.3580000400543213
+    ],
+    "dimensions": [
+      9.61299991607666,
+      3.700000047683716,
+      3.3580000437796116
+    ]
+  },
+  "model_objects": 1916,
+  "mesh_objects": 1831,
+  "evaluated_vertices_counting_instances": 233676,
+  "evaluated_triangles_counting_instances": 453552,
+  "file": "C:\\Users\\\u6d2a\u6052\u8fbe\\Documents\\ChatGPT\\Astra\u706b\u8f66\\models\\leopard2\\Leopard_2_early_prototype_editable.blend",
+  "blender_version": "5.2.1 LTS"
+}

@@ -1,0 +1,35 @@
+{
+  "project": "dual-track-real-train-modeling",
+  "video": {
+    "durationSeconds": 180,
+    "aspectRatio": "16:9",
+    "resolution": "1920x1080",
+    "fps": 30,
+    "platform": "Douyin landscape single master",
+    "voice": "Chinese human narration"
+  },
+  "subjects": [
+    {
+      "id": "QJ",
+      "label": "QJ steam locomotive",
+      "referenceRoot": "references/qj",
+      "modelFile": "models/QJ_steam_locomotive.blend",
+      "glbFile": "models/QJ_steam_locomotive.glb"
+    },
+    {
+      "id": "CR400AF",
+      "label": "CR400AF EMU",
+      "referenceRoot": "references/cr400af",
+      "modelFile": "models/CR400AF_emu.blend",
+      "glbFile": "models/CR400AF_emu.glb"
+    }
+  ],
+  "modelPolicy": {
+    "realReferenceRequired": true,
+    "minimumNamedPartsPerTrain": 10,
+    "singleJoinedShellAllowed": false,
+    "engineeringAccuracyClaim": false,
+    "stopAfterStagnantRepairs": 2
+  }
+}
+

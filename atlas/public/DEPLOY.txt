@@ -1,0 +1,14 @@
+ASTRA ATLAS - Leopard 2 Model Viewer
+
+This directory is a complete static website.
+Upload all files to a static HTTP/HTTPS host, preserving paths.
+Entry: index.html
+Model: models/leopard2.glb
+Licenses: licenses/
+
+No backend, API keys, CDN, or runtime installation is required on the host.
+Root-domain and subdirectory hosting are both supported.
+Opening index.html directly via file: is not supported by browsers.
+
+The model is an exterior reconstruction. Section planes are visual only.
+Export separates existing parts; it does not remesh or cap cut surfaces.

@@ -1,0 +1,1525 @@
+{
+  "generated_by": "scripts/generate_train_models.py",
+  "status": "procedural baseline; not an Astra run",
+  "subjects": {
+    "QJ": {
+      "object_count": 98,
+      "roles": [
+        "assembly",
+        "boiler",
+        "boiler pipe",
+        "brake cylinder",
+        "brake rigging",
+        "brake shoe",
+        "brake structure",
+        "buffer",
+        "buffer beam",
+        "cab",
+        "cab roof",
+        "cab window",
+        "chimney",
+        "chimney cap",
+        "coupling",
+        "deck",
+        "driving axle",
+        "driving wheel",
+        "frame",
+        "front fittings",
+        "handrail",
+        "headlamp",
+        "leading/trailing wheel",
+        "main rod",
+        "pilot frame",
+        "rod pin",
+        "running gear",
+        "side rod",
+        "smoke box",
+        "smoke box door",
+        "steam dome",
+        "tender",
+        "tender top",
+        "tender wheel",
+        "wheel hub"
+      ],
+      "objects": [
+        {
+          "name": "QJ_Assembly",
+          "type": "EMPTY",
+          "role": "assembly",
+          "reference_ids": "QJ-side,QJ-three-quarter"
+        },
+        {
+          "name": "QJ_Frame_Group",
+          "type": "EMPTY",
+          "role": "frame",
+          "reference_ids": "QJ-side"
+        },
+        {
+          "name": "QJ_Frame",
+          "type": "MESH",
+          "role": "frame",
+          "reference_ids": "QJ-side"
+        },
+        {
+          "name": "QJ_Deck",
+          "type": "MESH",
+          "role": "deck",
+          "reference_ids": "QJ-side"
+        },
+        {
+          "name": "QJ_Boiler_Group",
+          "type": "EMPTY",
+          "role": "boiler",
+          "reference_ids": "QJ-side,QJ-three-quarter"
+        },
+        {
+          "name": "QJ_Boiler",
+          "type": "MESH",
+          "role": "boiler",
+          "reference_ids": "QJ-side"
+        },
+        {
+          "name": "QJ_Smoke_Box",
+          "type": "MESH",
+          "role": "smoke box",
+          "reference_ids": "QJ-front-detail"
+        },
+        {
+          "name": "QJ_Smoke_Box_Door",
+          "type": "MESH",
+          "role": "smoke box door",
+          "reference_ids": "QJ-front-detail"
+        },
+        {
+          "name": "QJ_Cab_Group",
+          "type": "EMPTY",
+          "role": "cab",
+          "reference_ids": "QJ-side,QJ-three-quarter"
+        },
+        {
+          "name": "QJ_Cab",
+          "type": "MESH",
+          "role": "cab",
+          "reference_ids": "QJ-side"
+        },
+        {
+          "name": "QJ_Cab_Roof",
+          "type": "MESH",
+          "role": "cab roof",
+          "reference_ids": "QJ-side"
+        },
+        {
+          "name": "QJ_Cab_Window_L",
+          "type": "MESH",
+          "role": "cab window",
+          "reference_ids": "QJ-three-quarter"
+        },
+        {
+          "name": "QJ_Cab_Window_R",
+          "type": "MESH",
+          "role": "cab window",
+          "reference_ids": "QJ-three-quarter"
+        },
+        {
+          "name": "QJ_Running_Gear_Group",
+          "type": "EMPTY",
+          "role": "running gear",
+          "reference_ids": "QJ-side,QJ-front-detail"
+        },
+        {
+          "name": "QJ_Driving_Wheel_L_01",
+          "type": "MESH",
+          "role": "driving wheel",
+          "reference_ids": "QJ-side,QJ-front-detail"
+        },
+        {
+          "name": "QJ_Wheel_Hub_L_01",
+          "type": "MESH",
+          "role": "wheel hub",
+          "reference_ids": "QJ-side"
+        },
+        {
+          "name": "QJ_Driving_Wheel_R_01",
+          "type": "MESH",
+          "role": "driving wheel",
+          "reference_ids": "QJ-side,QJ-front-detail"
+        },
+        {
+          "name": "QJ_Wheel_Hub_R_01",
+          "type": "MESH",
+          "role": "wheel hub",
+          "reference_ids": "QJ-side"
+        },
+        {
+          "name": "QJ_Driving_Axle_01",
+          "type": "MESH",
+          "role": "driving axle",
+          "reference_ids": "QJ-side,QJ-front-detail"
+        },
+        {
+          "name": "QJ_Driving_Wheel_L_02",
+          "type": "MESH",
+          "role": "driving wheel",
+          "reference_ids": "QJ-side,QJ-front-detail"
+        },
+        {
+          "name": "QJ_Wheel_Hub_L_02",
+          "type": "MESH",
+          "role": "wheel hub",
+          "reference_ids": "QJ-side"
+        },
+        {
+          "name": "QJ_Driving_Wheel_R_02",
+          "type": "MESH",
+          "role": "driving wheel",
+          "reference_ids": "QJ-side,QJ-front-detail"
+        },
+        {
+          "name": "QJ_Wheel_Hub_R_02",
+          "type": "MESH",
+          "role": "wheel hub",
+          "reference_ids": "QJ-side"
+        },
+        {
+          "name": "QJ_Driving_Axle_02",
+          "type": "MESH",
+          "role": "driving axle",
+          "reference_ids": "QJ-side,QJ-front-detail"
+        },
+        {
+          "name": "QJ_Driving_Wheel_L_03",
+          "type": "MESH",
+          "role": "driving wheel",
+          "reference_ids": "QJ-side,QJ-front-detail"
+        },
+        {
+          "name": "QJ_Wheel_Hub_L_03",
+          "type": "MESH",
+          "role": "wheel hub",
+          "reference_ids": "QJ-side"
+        },
+        {
+          "name": "QJ_Driving_Wheel_R_03",
+          "type": "MESH",
+          "role": "driving wheel",
+          "reference_ids": "QJ-side,QJ-front-detail"
+        },
+        {
+          "name": "QJ_Wheel_Hub_R_03",
+          "type": "MESH",
+          "role": "wheel hub",
+          "reference_ids": "QJ-side"
+        },
+        {
+          "name": "QJ_Driving_Axle_03",
+          "type": "MESH",
+          "role": "driving axle",
+          "reference_ids": "QJ-side,QJ-front-detail"
+        },
+        {
+          "name": "QJ_Driving_Wheel_L_04",
+          "type": "MESH",
+          "role": "driving wheel",
+          "reference_ids": "QJ-side,QJ-front-detail"
+        },
+        {
+          "name": "QJ_Wheel_Hub_L_04",
+          "type": "MESH",
+          "role": "wheel hub",
+          "reference_ids": "QJ-side"
+        },
+        {
+          "name": "QJ_Driving_Wheel_R_04",
+          "type": "MESH",
+          "role": "driving wheel",
+          "reference_ids": "QJ-side,QJ-front-detail"
+        },
+        {
+          "name": "QJ_Wheel_Hub_R_04",
+          "type": "MESH",
+          "role": "wheel hub",
+          "reference_ids": "QJ-side"
+        },
+        {
+          "name": "QJ_Driving_Axle_04",
+          "type": "MESH",
+          "role": "driving axle",
+          "reference_ids": "QJ-side,QJ-front-detail"
+        },
+        {
+          "name": "QJ_Driving_Wheel_L_05",
+          "type": "MESH",
+          "role": "driving wheel",
+          "reference_ids": "QJ-side,QJ-front-detail"
+        },
+        {
+          "name": "QJ_Wheel_Hub_L_05",
+          "type": "MESH",
+          "role": "wheel hub",
+          "reference_ids": "QJ-side"
+        },
+        {
+          "name": "QJ_Driving_Wheel_R_05",
+          "type": "MESH",
+          "role": "driving wheel",
+          "reference_ids": "QJ-side,QJ-front-detail"
+        },
+        {
+          "name": "QJ_Wheel_Hub_R_05",
+          "type": "MESH",
+          "role": "wheel hub",
+          "reference_ids": "QJ-side"
+        },
+        {
+          "name": "QJ_Driving_Axle_05",
+          "type": "MESH",
+          "role": "driving axle",
+          "reference_ids": "QJ-side,QJ-front-detail"
+        },
+        {
+          "name": "QJ_Leading_Wheel_L",
+          "type": "MESH",
+          "role": "leading/trailing wheel",
+          "reference_ids": "QJ-side,QJ-front-detail"
+        },
+        {
+          "name": "QJ_Leading_Wheel_R",
+          "type": "MESH",
+          "role": "leading/trailing wheel",
+          "reference_ids": "QJ-side,QJ-front-detail"
+        },
+        {
+          "name": "QJ_Trailing_Wheel_L",
+          "type": "MESH",
+          "role": "leading/trailing wheel",
+          "reference_ids": "QJ-side,QJ-front-detail"
+        },
+        {
+          "name": "QJ_Trailing_Wheel_R",
+          "type": "MESH",
+          "role": "leading/trailing wheel",
+          "reference_ids": "QJ-side,QJ-front-detail"
+        },
+        {
+          "name": "QJ_Side_Rod_L",
+          "type": "MESH",
+          "role": "side rod",
+          "reference_ids": "QJ-side"
+        },
+        {
+          "name": "QJ_Main_Rod_L",
+          "type": "MESH",
+          "role": "main rod",
+          "reference_ids": "QJ-side,QJ-front-detail"
+        },
+        {
+          "name": "QJ_Rod_Pin_L_01",
+          "type": "MESH",
+          "role": "rod pin",
+          "reference_ids": "QJ-side"
+        },
+        {
+          "name": "QJ_Rod_Pin_L_02",
+          "type": "MESH",
+          "role": "rod pin",
+          "reference_ids": "QJ-side"
+        },
+        {
+          "name": "QJ_Rod_Pin_L_03",
+          "type": "MESH",
+          "role": "rod pin",
+          "reference_ids": "QJ-side"
+        },
+        {
+          "name": "QJ_Rod_Pin_L_04",
+          "type": "MESH",
+          "role": "rod pin",
+          "reference_ids": "QJ-side"
+        },
+        {
+          "name": "QJ_Rod_Pin_L_05",
+          "type": "MESH",
+          "role": "rod pin",
+          "reference_ids": "QJ-side"
+        },
+        {
+          "name": "QJ_Side_Rod_R",
+          "type": "MESH",
+          "role": "side rod",
+          "reference_ids": "QJ-side"
+        },
+        {
+          "name": "QJ_Main_Rod_R",
+          "type": "MESH",
+          "role": "main rod",
+          "reference_ids": "QJ-side,QJ-front-detail"
+        },
+        {
+          "name": "QJ_Rod_Pin_R_01",
+          "type": "MESH",
+          "role": "rod pin",
+          "reference_ids": "QJ-side"
+        },
+        {
+          "name": "QJ_Rod_Pin_R_02",
+          "type": "MESH",
+          "role": "rod pin",
+          "reference_ids": "QJ-side"
+        },
+        {
+          "name": "QJ_Rod_Pin_R_03",
+          "type": "MESH",
+          "role": "rod pin",
+          "reference_ids": "QJ-side"
+        },
+        {
+          "name": "QJ_Rod_Pin_R_04",
+          "type": "MESH",
+          "role": "rod pin",
+          "reference_ids": "QJ-side"
+        },
+        {
+          "name": "QJ_Rod_Pin_R_05",
+          "type": "MESH",
+          "role": "rod pin",
+          "reference_ids": "QJ-side"
+        },
+        {
+          "name": "QJ_Pilot_Frame",
+          "type": "MESH",
+          "role": "pilot frame",
+          "reference_ids": "QJ-front-detail"
+        },
+        {
+          "name": "QJ_Tender_Wheel_L_01",
+          "type": "MESH",
+          "role": "tender wheel",
+          "reference_ids": "QJ-side"
+        },
+        {
+          "name": "QJ_Tender_Wheel_R_01",
+          "type": "MESH",
+          "role": "tender wheel",
+          "reference_ids": "QJ-side"
+        },
+        {
+          "name": "QJ_Tender_Wheel_L_02",
+          "type": "MESH",
+          "role": "tender wheel",
+          "reference_ids": "QJ-side"
+        },
+        {
+          "name": "QJ_Tender_Wheel_R_02",
+          "type": "MESH",
+          "role": "tender wheel",
+          "reference_ids": "QJ-side"
+        },
+        {
+          "name": "QJ_Brake_Structure_Group",
+          "type": "EMPTY",
+          "role": "brake structure",
+          "reference_ids": "QJ-side,QJ-front-detail"
+        },
+        {
+          "name": "QJ_Brake_Rigging_L",
+          "type": "MESH",
+          "role": "brake rigging",
+          "reference_ids": "QJ-side"
+        },
+        {
+          "name": "QJ_Brake_Cylinder_L",
+          "type": "MESH",
+          "role": "brake cylinder",
+          "reference_ids": "QJ-front-detail"
+        },
+        {
+          "name": "QJ_Brake_Shoe_L_01",
+          "type": "MESH",
+          "role": "brake shoe",
+          "reference_ids": "QJ-front-detail"
+        },
+        {
+          "name": "QJ_Brake_Shoe_L_02",
+          "type": "MESH",
+          "role": "brake shoe",
+          "reference_ids": "QJ-front-detail"
+        },
+        {
+          "name": "QJ_Brake_Shoe_L_03",
+          "type": "MESH",
+          "role": "brake shoe",
+          "reference_ids": "QJ-front-detail"
+        },
+        {
+          "name": "QJ_Brake_Shoe_L_04",
+          "type": "MESH",
+          "role": "brake shoe",
+          "reference_ids": "QJ-front-detail"
+        },
+        {
+          "name": "QJ_Brake_Shoe_L_05",
+          "type": "MESH",
+          "role": "brake shoe",
+          "reference_ids": "QJ-front-detail"
+        },
+        {
+          "name": "QJ_Brake_Rigging_R",
+          "type": "MESH",
+          "role": "brake rigging",
+          "reference_ids": "QJ-side"
+        },
+        {
+          "name": "QJ_Brake_Cylinder_R",
+          "type": "MESH",
+          "role": "brake cylinder",
+          "reference_ids": "QJ-front-detail"
+        },
+        {
+          "name": "QJ_Brake_Shoe_R_01",
+          "type": "MESH",
+          "role": "brake shoe",
+          "reference_ids": "QJ-front-detail"
+        },
+        {
+          "name": "QJ_Brake_Shoe_R_02",
+          "type": "MESH",
+          "role": "brake shoe",
+          "reference_ids": "QJ-front-detail"
+        },
+        {
+          "name": "QJ_Brake_Shoe_R_03",
+          "type": "MESH",
+          "role": "brake shoe",
+          "reference_ids": "QJ-front-detail"
+        },
+        {
+          "name": "QJ_Brake_Shoe_R_04",
+          "type": "MESH",
+          "role": "brake shoe",
+          "reference_ids": "QJ-front-detail"
+        },
+        {
+          "name": "QJ_Brake_Shoe_R_05",
+          "type": "MESH",
+          "role": "brake shoe",
+          "reference_ids": "QJ-front-detail"
+        },
+        {
+          "name": "QJ_Tender_Group",
+          "type": "EMPTY",
+          "role": "tender",
+          "reference_ids": "QJ-side,QJ-three-quarter"
+        },
+        {
+          "name": "QJ_Tender_Body",
+          "type": "MESH",
+          "role": "tender",
+          "reference_ids": "QJ-side"
+        },
+        {
+          "name": "QJ_Tender_Top",
+          "type": "MESH",
+          "role": "tender top",
+          "reference_ids": "QJ-side"
+        },
+        {
+          "name": "QJ_Front_Fittings_Group",
+          "type": "EMPTY",
+          "role": "front fittings",
+          "reference_ids": "QJ-front-detail"
+        },
+        {
+          "name": "QJ_Chimney",
+          "type": "MESH",
+          "role": "chimney",
+          "reference_ids": "QJ-front-detail"
+        },
+        {
+          "name": "QJ_Chimney_Cap",
+          "type": "MESH",
+          "role": "chimney cap",
+          "reference_ids": "QJ-front-detail"
+        },
+        {
+          "name": "QJ_Dome_1",
+          "type": "MESH",
+          "role": "steam dome",
+          "reference_ids": "QJ-side"
+        },
+        {
+          "name": "QJ_Dome_2",
+          "type": "MESH",
+          "role": "steam dome",
+          "reference_ids": "QJ-side"
+        },
+        {
+          "name": "QJ_Dome_3",
+          "type": "MESH",
+          "role": "steam dome",
+          "reference_ids": "QJ-side"
+        },
+        {
+          "name": "QJ_Headlamp",
+          "type": "MESH",
+          "role": "headlamp",
+          "reference_ids": "QJ-front-detail"
+        },
+        {
+          "name": "QJ_Cab_Handrail_L",
+          "type": "MESH",
+          "role": "handrail",
+          "reference_ids": "QJ-side"
+        },
+        {
+          "name": "QJ_Boiler_Pipe_L",
+          "type": "MESH",
+          "role": "boiler pipe",
+          "reference_ids": "QJ-side"
+        },
+        {
+          "name": "QJ_Cab_Handrail_R",
+          "type": "MESH",
+          "role": "handrail",
+          "reference_ids": "QJ-side"
+        },
+        {
+          "name": "QJ_Boiler_Pipe_R",
+          "type": "MESH",
+          "role": "boiler pipe",
+          "reference_ids": "QJ-side"
+        },
+        {
+          "name": "QJ_Coupling_Group",
+          "type": "EMPTY",
+          "role": "coupling",
+          "reference_ids": "QJ-front-detail,QJ-side"
+        },
+        {
+          "name": "QJ_Buffer_Beam_Front",
+          "type": "MESH",
+          "role": "buffer beam",
+          "reference_ids": "QJ-front-detail"
+        },
+        {
+          "name": "QJ_Buffer_Front_L",
+          "type": "MESH",
+          "role": "buffer",
+          "reference_ids": "QJ-front-detail"
+        },
+        {
+          "name": "QJ_Buffer_Front_R",
+          "type": "MESH",
+          "role": "buffer",
+          "reference_ids": "QJ-front-detail"
+        },
+        {
+          "name": "QJ_Buffer_Beam_Rear",
+          "type": "MESH",
+          "role": "buffer beam",
+          "reference_ids": "QJ-front-detail"
+        },
+        {
+          "name": "QJ_Buffer_Rear_L",
+          "type": "MESH",
+          "role": "buffer",
+          "reference_ids": "QJ-front-detail"
+        },
+        {
+          "name": "QJ_Buffer_Rear_R",
+          "type": "MESH",
+          "role": "buffer",
+          "reference_ids": "QJ-front-detail"
+        }
+      ]
+    },
+    "CR400AF": {
+      "object_count": 141,
+      "roles": [
+        "aerodynamic nose",
+        "assembly",
+        "axle",
+        "bogie",
+        "bogie frame",
+        "bogies and wheelsets",
+        "cab glass",
+        "car bodies",
+        "car body",
+        "coupler",
+        "coupling",
+        "door",
+        "doors and windows",
+        "headlight",
+        "inter-car connection",
+        "interior floor",
+        "interior regions",
+        "interior simplified seat zone",
+        "livery stripe",
+        "lower skirt",
+        "nose",
+        "nose livery",
+        "pantograph arm",
+        "pantograph base",
+        "pantograph contact strip",
+        "roof",
+        "roof bus",
+        "roof equipment",
+        "underframe equipment",
+        "wheelset",
+        "window"
+      ],
+      "objects": [
+        {
+          "name": "CR400AF_Assembly",
+          "type": "EMPTY",
+          "role": "assembly",
+          "reference_ids": "CR400AF-front,CR400AF-side,CR400AF-bogie"
+        },
+        {
+          "name": "CR400AF_Car_Bodies_Group",
+          "type": "EMPTY",
+          "role": "car bodies",
+          "reference_ids": "CR400AF-front,CR400AF-side"
+        },
+        {
+          "name": "CR400AF_Car_Body_01",
+          "type": "MESH",
+          "role": "car body",
+          "reference_ids": "CR400AF-side"
+        },
+        {
+          "name": "CR400AF_Car_Lower_Skirt_01",
+          "type": "MESH",
+          "role": "lower skirt",
+          "reference_ids": "CR400AF-side"
+        },
+        {
+          "name": "CR400AF_Red_Stripe_01_L",
+          "type": "MESH",
+          "role": "livery stripe",
+          "reference_ids": "CR400AF-side"
+        },
+        {
+          "name": "CR400AF_Red_Stripe_01_R",
+          "type": "MESH",
+          "role": "livery stripe",
+          "reference_ids": "CR400AF-side"
+        },
+        {
+          "name": "CR400AF_Car_Body_02",
+          "type": "MESH",
+          "role": "car body",
+          "reference_ids": "CR400AF-side"
+        },
+        {
+          "name": "CR400AF_Car_Lower_Skirt_02",
+          "type": "MESH",
+          "role": "lower skirt",
+          "reference_ids": "CR400AF-side"
+        },
+        {
+          "name": "CR400AF_Red_Stripe_02_L",
+          "type": "MESH",
+          "role": "livery stripe",
+          "reference_ids": "CR400AF-side"
+        },
+        {
+          "name": "CR400AF_Red_Stripe_02_R",
+          "type": "MESH",
+          "role": "livery stripe",
+          "reference_ids": "CR400AF-side"
+        },
+        {
+          "name": "CR400AF_Car_Body_03",
+          "type": "MESH",
+          "role": "car body",
+          "reference_ids": "CR400AF-side"
+        },
+        {
+          "name": "CR400AF_Car_Lower_Skirt_03",
+          "type": "MESH",
+          "role": "lower skirt",
+          "reference_ids": "CR400AF-side"
+        },
+        {
+          "name": "CR400AF_Red_Stripe_03_L",
+          "type": "MESH",
+          "role": "livery stripe",
+          "reference_ids": "CR400AF-side"
+        },
+        {
+          "name": "CR400AF_Red_Stripe_03_R",
+          "type": "MESH",
+          "role": "livery stripe",
+          "reference_ids": "CR400AF-side"
+        },
+        {
+          "name": "CR400AF_Nose_Group",
+          "type": "EMPTY",
+          "role": "nose",
+          "reference_ids": "CR400AF-front,CR400AF-line-scan"
+        },
+        {
+          "name": "CR400AF_Nose_Front",
+          "type": "MESH",
+          "role": "aerodynamic nose",
+          "reference_ids": "CR400AF-front"
+        },
+        {
+          "name": "CR400AF_Nose_Rear",
+          "type": "MESH",
+          "role": "aerodynamic nose",
+          "reference_ids": "CR400AF-front"
+        },
+        {
+          "name": "CR400AF_Nose_Red_Band_Front",
+          "type": "MESH",
+          "role": "nose livery",
+          "reference_ids": "CR400AF-front"
+        },
+        {
+          "name": "CR400AF_Nose_Red_Band_Rear",
+          "type": "MESH",
+          "role": "nose livery",
+          "reference_ids": "CR400AF-front"
+        },
+        {
+          "name": "CR400AF_Bogies_Group",
+          "type": "EMPTY",
+          "role": "bogies and wheelsets",
+          "reference_ids": "CR400AF-bogie,CR400AF-side"
+        },
+        {
+          "name": "CR400AF_Bogie_01_01",
+          "type": "EMPTY",
+          "role": "bogie",
+          "reference_ids": "CR400AF-bogie"
+        },
+        {
+          "name": "CR400AF_Bogie_Frame_01_01",
+          "type": "MESH",
+          "role": "bogie frame",
+          "reference_ids": "CR400AF-bogie"
+        },
+        {
+          "name": "CR400AF_Wheel_01_01_L_01",
+          "type": "MESH",
+          "role": "wheelset",
+          "reference_ids": "CR400AF-bogie"
+        },
+        {
+          "name": "CR400AF_Wheel_01_01_R_01",
+          "type": "MESH",
+          "role": "wheelset",
+          "reference_ids": "CR400AF-bogie"
+        },
+        {
+          "name": "CR400AF_Wheel_01_01_L_02",
+          "type": "MESH",
+          "role": "wheelset",
+          "reference_ids": "CR400AF-bogie"
+        },
+        {
+          "name": "CR400AF_Wheel_01_01_R_02",
+          "type": "MESH",
+          "role": "wheelset",
+          "reference_ids": "CR400AF-bogie"
+        },
+        {
+          "name": "CR400AF_Axle_01_01",
+          "type": "MESH",
+          "role": "axle",
+          "reference_ids": "CR400AF-bogie"
+        },
+        {
+          "name": "CR400AF_Bogie_01_02",
+          "type": "EMPTY",
+          "role": "bogie",
+          "reference_ids": "CR400AF-bogie"
+        },
+        {
+          "name": "CR400AF_Bogie_Frame_01_02",
+          "type": "MESH",
+          "role": "bogie frame",
+          "reference_ids": "CR400AF-bogie"
+        },
+        {
+          "name": "CR400AF_Wheel_01_02_L_01",
+          "type": "MESH",
+          "role": "wheelset",
+          "reference_ids": "CR400AF-bogie"
+        },
+        {
+          "name": "CR400AF_Wheel_01_02_R_01",
+          "type": "MESH",
+          "role": "wheelset",
+          "reference_ids": "CR400AF-bogie"
+        },
+        {
+          "name": "CR400AF_Wheel_01_02_L_02",
+          "type": "MESH",
+          "role": "wheelset",
+          "reference_ids": "CR400AF-bogie"
+        },
+        {
+          "name": "CR400AF_Wheel_01_02_R_02",
+          "type": "MESH",
+          "role": "wheelset",
+          "reference_ids": "CR400AF-bogie"
+        },
+        {
+          "name": "CR400AF_Axle_01_02",
+          "type": "MESH",
+          "role": "axle",
+          "reference_ids": "CR400AF-bogie"
+        },
+        {
+          "name": "CR400AF_Bogie_02_01",
+          "type": "EMPTY",
+          "role": "bogie",
+          "reference_ids": "CR400AF-bogie"
+        },
+        {
+          "name": "CR400AF_Bogie_Frame_02_01",
+          "type": "MESH",
+          "role": "bogie frame",
+          "reference_ids": "CR400AF-bogie"
+        },
+        {
+          "name": "CR400AF_Wheel_02_01_L_01",
+          "type": "MESH",
+          "role": "wheelset",
+          "reference_ids": "CR400AF-bogie"
+        },
+        {
+          "name": "CR400AF_Wheel_02_01_R_01",
+          "type": "MESH",
+          "role": "wheelset",
+          "reference_ids": "CR400AF-bogie"
+        },
+        {
+          "name": "CR400AF_Wheel_02_01_L_02",
+          "type": "MESH",
+          "role": "wheelset",
+          "reference_ids": "CR400AF-bogie"
+        },
+        {
+          "name": "CR400AF_Wheel_02_01_R_02",
+          "type": "MESH",
+          "role": "wheelset",
+          "reference_ids": "CR400AF-bogie"
+        },
+        {
+          "name": "CR400AF_Axle_02_01",
+          "type": "MESH",
+          "role": "axle",
+          "reference_ids": "CR400AF-bogie"
+        },
+        {
+          "name": "CR400AF_Bogie_02_02",
+          "type": "EMPTY",
+          "role": "bogie",
+          "reference_ids": "CR400AF-bogie"
+        },
+        {
+          "name": "CR400AF_Bogie_Frame_02_02",
+          "type": "MESH",
+          "role": "bogie frame",
+          "reference_ids": "CR400AF-bogie"
+        },
+        {
+          "name": "CR400AF_Wheel_02_02_L_01",
+          "type": "MESH",
+          "role": "wheelset",
+          "reference_ids": "CR400AF-bogie"
+        },
+        {
+          "name": "CR400AF_Wheel_02_02_R_01",
+          "type": "MESH",
+          "role": "wheelset",
+          "reference_ids": "CR400AF-bogie"
+        },
+        {
+          "name": "CR400AF_Wheel_02_02_L_02",
+          "type": "MESH",
+          "role": "wheelset",
+          "reference_ids": "CR400AF-bogie"
+        },
+        {
+          "name": "CR400AF_Wheel_02_02_R_02",
+          "type": "MESH",
+          "role": "wheelset",
+          "reference_ids": "CR400AF-bogie"
+        },
+        {
+          "name": "CR400AF_Axle_02_02",
+          "type": "MESH",
+          "role": "axle",
+          "reference_ids": "CR400AF-bogie"
+        },
+        {
+          "name": "CR400AF_Bogie_03_01",
+          "type": "EMPTY",
+          "role": "bogie",
+          "reference_ids": "CR400AF-bogie"
+        },
+        {
+          "name": "CR400AF_Bogie_Frame_03_01",
+          "type": "MESH",
+          "role": "bogie frame",
+          "reference_ids": "CR400AF-bogie"
+        },
+        {
+          "name": "CR400AF_Wheel_03_01_L_01",
+          "type": "MESH",
+          "role": "wheelset",
+          "reference_ids": "CR400AF-bogie"
+        },
+        {
+          "name": "CR400AF_Wheel_03_01_R_01",
+          "type": "MESH",
+          "role": "wheelset",
+          "reference_ids": "CR400AF-bogie"
+        },
+        {
+          "name": "CR400AF_Wheel_03_01_L_02",
+          "type": "MESH",
+          "role": "wheelset",
+          "reference_ids": "CR400AF-bogie"
+        },
+        {
+          "name": "CR400AF_Wheel_03_01_R_02",
+          "type": "MESH",
+          "role": "wheelset",
+          "reference_ids": "CR400AF-bogie"
+        },
+        {
+          "name": "CR400AF_Axle_03_01",
+          "type": "MESH",
+          "role": "axle",
+          "reference_ids": "CR400AF-bogie"
+        },
+        {
+          "name": "CR400AF_Bogie_03_02",
+          "type": "EMPTY",
+          "role": "bogie",
+          "reference_ids": "CR400AF-bogie"
+        },
+        {
+          "name": "CR400AF_Bogie_Frame_03_02",
+          "type": "MESH",
+          "role": "bogie frame",
+          "reference_ids": "CR400AF-bogie"
+        },
+        {
+          "name": "CR400AF_Wheel_03_02_L_01",
+          "type": "MESH",
+          "role": "wheelset",
+          "reference_ids": "CR400AF-bogie"
+        },
+        {
+          "name": "CR400AF_Wheel_03_02_R_01",
+          "type": "MESH",
+          "role": "wheelset",
+          "reference_ids": "CR400AF-bogie"
+        },
+        {
+          "name": "CR400AF_Wheel_03_02_L_02",
+          "type": "MESH",
+          "role": "wheelset",
+          "reference_ids": "CR400AF-bogie"
+        },
+        {
+          "name": "CR400AF_Wheel_03_02_R_02",
+          "type": "MESH",
+          "role": "wheelset",
+          "reference_ids": "CR400AF-bogie"
+        },
+        {
+          "name": "CR400AF_Axle_03_02",
+          "type": "MESH",
+          "role": "axle",
+          "reference_ids": "CR400AF-bogie"
+        },
+        {
+          "name": "CR400AF_Interior_Regions_Group",
+          "type": "EMPTY",
+          "role": "interior regions",
+          "reference_ids": "CR400AF-side"
+        },
+        {
+          "name": "CR400AF_Interior_Floor_01",
+          "type": "MESH",
+          "role": "interior floor",
+          "reference_ids": "CR400AF-side"
+        },
+        {
+          "name": "CR400AF_Interior_Seat_01_01",
+          "type": "MESH",
+          "role": "interior simplified seat zone",
+          "reference_ids": "CR400AF-side"
+        },
+        {
+          "name": "CR400AF_Interior_Seat_01_02",
+          "type": "MESH",
+          "role": "interior simplified seat zone",
+          "reference_ids": "CR400AF-side"
+        },
+        {
+          "name": "CR400AF_Interior_Floor_02",
+          "type": "MESH",
+          "role": "interior floor",
+          "reference_ids": "CR400AF-side"
+        },
+        {
+          "name": "CR400AF_Interior_Seat_02_01",
+          "type": "MESH",
+          "role": "interior simplified seat zone",
+          "reference_ids": "CR400AF-side"
+        },
+        {
+          "name": "CR400AF_Interior_Seat_02_02",
+          "type": "MESH",
+          "role": "interior simplified seat zone",
+          "reference_ids": "CR400AF-side"
+        },
+        {
+          "name": "CR400AF_Interior_Floor_03",
+          "type": "MESH",
+          "role": "interior floor",
+          "reference_ids": "CR400AF-side"
+        },
+        {
+          "name": "CR400AF_Interior_Seat_03_01",
+          "type": "MESH",
+          "role": "interior simplified seat zone",
+          "reference_ids": "CR400AF-side"
+        },
+        {
+          "name": "CR400AF_Interior_Seat_03_02",
+          "type": "MESH",
+          "role": "interior simplified seat zone",
+          "reference_ids": "CR400AF-side"
+        },
+        {
+          "name": "CR400AF_Underframe_Equipment_Group",
+          "type": "EMPTY",
+          "role": "underframe equipment",
+          "reference_ids": "CR400AF-bogie,CR400AF-side"
+        },
+        {
+          "name": "CR400AF_Underframe_Equipment_01",
+          "type": "MESH",
+          "role": "underframe equipment",
+          "reference_ids": "CR400AF-bogie,CR400AF-side"
+        },
+        {
+          "name": "CR400AF_Underframe_Equipment_02",
+          "type": "MESH",
+          "role": "underframe equipment",
+          "reference_ids": "CR400AF-bogie,CR400AF-side"
+        },
+        {
+          "name": "CR400AF_Underframe_Equipment_03",
+          "type": "MESH",
+          "role": "underframe equipment",
+          "reference_ids": "CR400AF-bogie,CR400AF-side"
+        },
+        {
+          "name": "CR400AF_Roof_Equipment_Group",
+          "type": "EMPTY",
+          "role": "roof equipment",
+          "reference_ids": "CR400AF-side,CR400AF-front"
+        },
+        {
+          "name": "CR400AF_Roof_01",
+          "type": "MESH",
+          "role": "roof",
+          "reference_ids": "CR400AF-side"
+        },
+        {
+          "name": "CR400AF_Roof_02",
+          "type": "MESH",
+          "role": "roof",
+          "reference_ids": "CR400AF-side"
+        },
+        {
+          "name": "CR400AF_Roof_03",
+          "type": "MESH",
+          "role": "roof",
+          "reference_ids": "CR400AF-side"
+        },
+        {
+          "name": "CR400AF_Pantograph_Base_01",
+          "type": "MESH",
+          "role": "pantograph base",
+          "reference_ids": "CR400AF-side"
+        },
+        {
+          "name": "CR400AF_Pantograph_Left_01",
+          "type": "MESH",
+          "role": "pantograph arm",
+          "reference_ids": "CR400AF-side"
+        },
+        {
+          "name": "CR400AF_Pantograph_Right_01",
+          "type": "MESH",
+          "role": "pantograph arm",
+          "reference_ids": "CR400AF-side"
+        },
+        {
+          "name": "CR400AF_Pantograph_Contact_01",
+          "type": "MESH",
+          "role": "pantograph contact strip",
+          "reference_ids": "CR400AF-side"
+        },
+        {
+          "name": "CR400AF_Pantograph_Base_02",
+          "type": "MESH",
+          "role": "pantograph base",
+          "reference_ids": "CR400AF-side"
+        },
+        {
+          "name": "CR400AF_Pantograph_Left_02",
+          "type": "MESH",
+          "role": "pantograph arm",
+          "reference_ids": "CR400AF-side"
+        },
+        {
+          "name": "CR400AF_Pantograph_Right_02",
+          "type": "MESH",
+          "role": "pantograph arm",
+          "reference_ids": "CR400AF-side"
+        },
+        {
+          "name": "CR400AF_Pantograph_Contact_02",
+          "type": "MESH",
+          "role": "pantograph contact strip",
+          "reference_ids": "CR400AF-side"
+        },
+        {
+          "name": "CR400AF_Roof_Main_Bus",
+          "type": "MESH",
+          "role": "roof bus",
+          "reference_ids": "CR400AF-side"
+        },
+        {
+          "name": "CR400AF_Cab_Glass_Front",
+          "type": "MESH",
+          "role": "cab glass",
+          "reference_ids": "CR400AF-front,CR400AF-line-scan"
+        },
+        {
+          "name": "CR400AF_Headlight_Front",
+          "type": "MESH",
+          "role": "headlight",
+          "reference_ids": "CR400AF-front"
+        },
+        {
+          "name": "CR400AF_Cab_Glass_Rear",
+          "type": "MESH",
+          "role": "cab glass",
+          "reference_ids": "CR400AF-front,CR400AF-line-scan"
+        },
+        {
+          "name": "CR400AF_Headlight_Rear",
+          "type": "MESH",
+          "role": "headlight",
+          "reference_ids": "CR400AF-front"
+        },
+        {
+          "name": "CR400AF_Doors_Windows_Group",
+          "type": "EMPTY",
+          "role": "doors and windows",
+          "reference_ids": "CR400AF-side,CR400AF-front"
+        },
+        {
+          "name": "CR400AF_Window_01_L_01",
+          "type": "MESH",
+          "role": "window",
+          "reference_ids": "CR400AF-side"
+        },
+        {
+          "name": "CR400AF_Window_01_L_02",
+          "type": "MESH",
+          "role": "window",
+          "reference_ids": "CR400AF-side"
+        },
+        {
+          "name": "CR400AF_Window_01_L_03",
+          "type": "MESH",
+          "role": "window",
+          "reference_ids": "CR400AF-side"
+        },
+        {
+          "name": "CR400AF_Window_01_L_04",
+          "type": "MESH",
+          "role": "window",
+          "reference_ids": "CR400AF-side"
+        },
+        {
+          "name": "CR400AF_Window_01_L_05",
+          "type": "MESH",
+          "role": "window",
+          "reference_ids": "CR400AF-side"
+        },
+        {
+          "name": "CR400AF_Door_01_L_01",
+          "type": "MESH",
+          "role": "door",
+          "reference_ids": "CR400AF-side"
+        },
+        {
+          "name": "CR400AF_Door_01_L_02",
+          "type": "MESH",
+          "role": "door",
+          "reference_ids": "CR400AF-side"
+        },
+        {
+          "name": "CR400AF_Window_01_R_01",
+          "type": "MESH",
+          "role": "window",
+          "reference_ids": "CR400AF-side"
+        },
+        {
+          "name": "CR400AF_Window_01_R_02",
+          "type": "MESH",
+          "role": "window",
+          "reference_ids": "CR400AF-side"
+        },
+        {
+          "name": "CR400AF_Window_01_R_03",
+          "type": "MESH",
+          "role": "window",
+          "reference_ids": "CR400AF-side"
+        },
+        {
+          "name": "CR400AF_Window_01_R_04",
+          "type": "MESH",
+          "role": "window",
+          "reference_ids": "CR400AF-side"
+        },
+        {
+          "name": "CR400AF_Window_01_R_05",
+          "type": "MESH",
+          "role": "window",
+          "reference_ids": "CR400AF-side"
+        },
+        {
+          "name": "CR400AF_Door_01_R_01",
+          "type": "MESH",
+          "role": "door",
+          "reference_ids": "CR400AF-side"
+        },
+        {
+          "name": "CR400AF_Door_01_R_02",
+          "type": "MESH",
+          "role": "door",
+          "reference_ids": "CR400AF-side"
+        },
+        {
+          "name": "CR400AF_Window_02_L_01",
+          "type": "MESH",
+          "role": "window",
+          "reference_ids": "CR400AF-side"
+        },
+        {
+          "name": "CR400AF_Window_02_L_02",
+          "type": "MESH",
+          "role": "window",
+          "reference_ids": "CR400AF-side"
+        },
+        {
+          "name": "CR400AF_Window_02_L_03",
+          "type": "MESH",
+          "role": "window",
+          "reference_ids": "CR400AF-side"
+        },
+        {
+          "name": "CR400AF_Window_02_L_04",
+          "type": "MESH",
+          "role": "window",
+          "reference_ids": "CR400AF-side"
+        },
+        {
+          "name": "CR400AF_Window_02_L_05",
+          "type": "MESH",
+          "role": "window",
+          "reference_ids": "CR400AF-side"
+        },
+        {
+          "name": "CR400AF_Door_02_L_01",
+          "type": "MESH",
+          "role": "door",
+          "reference_ids": "CR400AF-side"
+        },
+        {
+          "name": "CR400AF_Door_02_L_02",
+          "type": "MESH",
+          "role": "door",
+          "reference_ids": "CR400AF-side"
+        },
+        {
+          "name": "CR400AF_Window_02_R_01",
+          "type": "MESH",
+          "role": "window",
+          "reference_ids": "CR400AF-side"
+        },
+        {
+          "name": "CR400AF_Window_02_R_02",
+          "type": "MESH",
+          "role": "window",
+          "reference_ids": "CR400AF-side"
+        },
+        {
+          "name": "CR400AF_Window_02_R_03",
+          "type": "MESH",
+          "role": "window",
+          "reference_ids": "CR400AF-side"
+        },
+        {
+          "name": "CR400AF_Window_02_R_04",
+          "type": "MESH",
+          "role": "window",
+          "reference_ids": "CR400AF-side"
+        },
+        {
+          "name": "CR400AF_Window_02_R_05",
+          "type": "MESH",
+          "role": "window",
+          "reference_ids": "CR400AF-side"
+        },
+        {
+          "name": "CR400AF_Door_02_R_01",
+          "type": "MESH",
+          "role": "door",
+          "reference_ids": "CR400AF-side"
+        },
+        {
+          "name": "CR400AF_Door_02_R_02",
+          "type": "MESH",
+          "role": "door",
+          "reference_ids": "CR400AF-side"
+        },
+        {
+          "name": "CR400AF_Window_03_L_01",
+          "type": "MESH",
+          "role": "window",
+          "reference_ids": "CR400AF-side"
+        },
+        {
+          "name": "CR400AF_Window_03_L_02",
+          "type": "MESH",
+          "role": "window",
+          "reference_ids": "CR400AF-side"
+        },
+        {
+          "name": "CR400AF_Window_03_L_03",
+          "type": "MESH",
+          "role": "window",
+          "reference_ids": "CR400AF-side"
+        },
+        {
+          "name": "CR400AF_Window_03_L_04",
+          "type": "MESH",
+          "role": "window",
+          "reference_ids": "CR400AF-side"
+        },
+        {
+          "name": "CR400AF_Window_03_L_05",
+          "type": "MESH",
+          "role": "window",
+          "reference_ids": "CR400AF-side"
+        },
+        {
+          "name": "CR400AF_Door_03_L_01",
+          "type": "MESH",
+          "role": "door",
+          "reference_ids": "CR400AF-side"
+        },
+        {
+          "name": "CR400AF_Door_03_L_02",
+          "type": "MESH",
+          "role": "door",
+          "reference_ids": "CR400AF-side"
+        },
+        {
+          "name": "CR400AF_Window_03_R_01",
+          "type": "MESH",
+          "role": "window",
+          "reference_ids": "CR400AF-side"
+        },
+        {
+          "name": "CR400AF_Window_03_R_02",
+          "type": "MESH",
+          "role": "window",
+          "reference_ids": "CR400AF-side"
+        },
+        {
+          "name": "CR400AF_Window_03_R_03",
+          "type": "MESH",
+          "role": "window",
+          "reference_ids": "CR400AF-side"
+        },
+        {
+          "name": "CR400AF_Window_03_R_04",
+          "type": "MESH",
+          "role": "window",
+          "reference_ids": "CR400AF-side"
+        },
+        {
+          "name": "CR400AF_Window_03_R_05",
+          "type": "MESH",
+          "role": "window",
+          "reference_ids": "CR400AF-side"
+        },
+        {
+          "name": "CR400AF_Door_03_R_01",
+          "type": "MESH",
+          "role": "door",
+          "reference_ids": "CR400AF-side"
+        },
+        {
+          "name": "CR400AF_Door_03_R_02",
+          "type": "MESH",
+          "role": "door",
+          "reference_ids": "CR400AF-side"
+        },
+        {
+          "name": "CR400AF_Coupling_Group",
+          "type": "EMPTY",
+          "role": "coupling",
+          "reference_ids": "CR400AF-front,CR400AF-side"
+        },
+        {
+          "name": "CR400AF_Coupler_01",
+          "type": "MESH",
+          "role": "coupler",
+          "reference_ids": "CR400AF-front"
+        },
+        {
+          "name": "CR400AF_Connection_Bellows_01",
+          "type": "MESH",
+          "role": "inter-car connection",
+          "reference_ids": "CR400AF-side"
+        },
+        {
+          "name": "CR400AF_Coupler_02",
+          "type": "MESH",
+          "role": "coupler",
+          "reference_ids": "CR400AF-front"
+        },
+        {
+          "name": "CR400AF_Connection_Bellows_02",
+          "type": "MESH",
+          "role": "inter-car connection",
+          "reference_ids": "CR400AF-side"
+        }
+      ]
+    }
+  },
+  "requirements": {
+    "independent_named_parts": true,
+    "real_reference_ids_embedded": true,
+    "minimum_named_parts_per_train": 10
+  }
+}

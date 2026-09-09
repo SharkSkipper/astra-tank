@@ -1,0 +1,12 @@
+node_modules/
+viewer/.cache/
+*.tmp
+*.log
+assets/render-cache/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
+*.pem
+*.key

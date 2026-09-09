@@ -1,0 +1,11 @@
+{
+  "name": "dual-track-real-train-modeling",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "viewer": "node scripts/serve_viewer.mjs",
+    "viewer:bg": "powershell -ExecutionPolicy Bypass -File .\\scripts\\start_viewer.ps1",
+    "check:viewer": "node --check viewer/app.js && node --check scripts/serve_viewer.mjs",
+    "check:assets": "python scripts/validate_assets.py"
+  }
+}

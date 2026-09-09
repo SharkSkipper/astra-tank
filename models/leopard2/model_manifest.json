@@ -1,0 +1,31 @@
+{
+  "asset": "Leopard_2_early_prototype_editable.blend",
+  "blender": "5.2.1 LTS",
+  "interpretation": "Early Leopard 2 prototype family, exact PT/T unknown",
+  "units": "meters",
+  "front_axis": "-X",
+  "up_axis": "+Z",
+  "targets_m": {
+    "overall_length": 9.613,
+    "overall_width": 3.7,
+    "gun_axis_height": 2.009
+  },
+  "running_gear": {
+    "road_wheel_stations_per_side": 7,
+    "paired_road_wheels_per_side": 14,
+    "track_links_per_side": 85,
+    "track_shoe_width_m": 0.635,
+    "track_outer_width_m": 3.42,
+    "track_pitch_m": 0.1818
+  },
+  "objects": 1916,
+  "mesh_objects": 1831,
+  "curve_objects": 26,
+  "editable_modifiers": 2508,
+  "source": "references/leopard2/reference_four_views.png",
+  "assumptions_file": "references/leopard2/source-research.md",
+  "controls": {
+    "Turret_Pivot": "yaw_degrees",
+    "Gun_Elevation_Pivot": "elevation_degrees"
+  }
+}

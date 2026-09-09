@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#121515" />
+    <meta name="description" content="豹 2 早期原型三维模型图谱" />
+    <title>豹 2 原型 · ASTRA ATLAS</title>
+    <link rel="icon" href="data:," />
+  </head>
+  <body>
+    <div id="app">
+      <header class="topbar">
+        <a class="brand" href="./" aria-label="ASTRA ATLAS 首页"><i data-lucide="boxes"></i><span>ASTRA <b>ATLAS</b></span></a>
+        <div class="header-divider"></div>
+        <span class="workspace-name">机械结构图谱</span>
+        <div class="header-right"><span class="live-status"><span></span><span id="header-status">正在载入</span></span><button class="command" id="download" disabled><i data-lucide="download"></i><span>导出模型</span></button></div>
+      </header>
+
+      <main class="workspace">
+        <aside class="structure panel" id="structure-panel" aria-label="模型结构">
+          <div class="panel-heading"><h2>模型结构</h2><span id="total-parts" class="counter">--</span><button class="icon-button mobile-close" data-close-panel aria-label="关闭结构面板"><i data-lucide="x"></i></button></div>
+          <label class="search"><i data-lucide="search"></i><input id="search" type="search" placeholder="搜索部件或编号" aria-label="搜索部件或编号" autocomplete="off" /></label>
+          <div class="structure-controls"><select id="preset" aria-label="结构预设"><option value="all">整车总览</option><option value="turret">炮塔与火炮</option><option value="mobility">行走系统</option><option value="hull">车体结构</option><option value="equipment">设备与附件</option></select><button id="show-all" class="icon-button" title="显示全部" aria-label="显示全部"><i data-lucide="eye"></i></button><button id="hide-all" class="icon-button" title="隐藏全部" aria-label="隐藏全部"><i data-lucide="eye-off"></i></button></div>
+          <div class="tree-caption"><span>总成 / 部件</span><span>可见</span></div>
+          <div id="system-tree" class="system-tree" role="list"></div>
+          <div id="search-results" class="search-results" hidden></div>
+          <div class="structure-footer"><i data-lucide="box"></i><div><b>Leopard 2 · 早期原型</b><span>1970s / 德国</span></div><span class="asset-tag">GLB</span></div>
+        </aside>
+
+        <section class="stage" aria-label="三维模型视窗">
+          <canvas id="scene" aria-label="豹 2 三维模型" tabindex="0"></canvas>
+          <div class="stage-heading"><div class="model-kicker"><span class="status-square"></span>LEOPARD 2 / EARLY PROTOTYPE</div><h1>豹 2 早期原型</h1><p>全车装配 <span>·</span> <span id="model-part-count">--</span> 个独立部件</p></div>
+          <div class="stage-top-actions"><button id="open-structure" class="icon-button mobile-trigger" aria-label="打开模型结构"><i data-lucide="panel-left"></i></button><button id="open-inspector" class="icon-button inspector-trigger" aria-label="打开模型参数"><i data-lucide="sliders-horizontal"></i></button></div>
+          <div class="view-control"><span id="view-label">透视视图</span><select id="view" aria-label="相机视角"><option value="perspective">自由视角</option><option value="front">前视图</option><option value="back">后视图</option><option value="left">左视图</option><option value="right">右视图</option><option value="top">俯视图</option></select></div>
+          <div class="render-modes" role="group" aria-label="显示模式"><button class="active" data-mode="material" aria-pressed="true"><i data-lucide="box"></i>实体</button><button data-mode="systems" aria-pressed="false"><i data-lucide="layers"></i>分组</button><button data-mode="xray" aria-pressed="false"><i data-lucide="scan"></i>透视</button><button data-mode="wireframe" aria-pressed="false"><i data-lucide="network"></i>线框</button></div>
+          <div id="loading" class="loading-state"><i data-lucide="box"></i><strong id="loading-title">正在载入模型</strong><span id="loading-text">Leopard 2 · 10.96 MB</span><progress id="loading-progress" max="100" value="0"></progress><button id="retry" class="command" hidden>重新载入</button></div>
+          <div id="empty-scene" class="empty-scene" hidden><i data-lucide="eye-off"></i><span>全部部件已隐藏</span><button class="command" id="empty-restore">显示全部</button></div>
+          <div id="hover-label" class="hover-label" hidden></div>
+          <div class="stage-bottom"><div class="stage-scale"><span></span><b>米制模型</b></div><div class="scene-toolbar" role="toolbar" aria-label="视图工具"><button id="reset" class="icon-button" title="重置模型" aria-label="重置模型"><i data-lucide="rotate-ccw"></i></button><button id="fit" class="icon-button" title="适配视窗" aria-label="适配视窗"><i data-lucide="focus"></i></button><span class="toolbar-separator"></span><button id="rotate" class="icon-button" title="自动旋转" aria-label="自动旋转" aria-pressed="false"><i data-lucide="orbit"></i></button><button id="grid" class="icon-button active" title="地面网格" aria-label="地面网格" aria-pressed="true"><i data-lucide="grid-2x2"></i></button><button id="projection" class="icon-button" title="正交投影" aria-label="正交投影" aria-pressed="false"><i data-lucide="cuboid"></i></button><span class="toolbar-separator"></span><button id="screenshot" class="icon-button" title="保存截图" aria-label="保存截图"><i data-lucide="camera"></i></button><button id="fullscreen" class="icon-button" title="全屏" aria-label="全屏" aria-pressed="false"><i data-lucide="maximize"></i></button></div><span class="stage-axis">Y <span>↑</span></span></div>
+        </section>
+
+        <aside class="inspector panel" id="inspector-panel" aria-label="模型参数">
+          <div class="panel-heading"><h2>模型参数</h2><button class="icon-button mobile-close" data-close-panel aria-label="关闭参数面板"><i data-lucide="x"></i></button><button id="info" class="icon-button desktop-info" title="模型来源" aria-label="模型来源"><i data-lucide="info"></i></button></div>
+          <div class="inspector-tabs" role="tablist" aria-label="参数分类"><button role="tab" id="tab-model" class="active" aria-selected="true" aria-controls="model-settings" data-tab="model">装配</button><button role="tab" id="tab-section" aria-selected="false" aria-controls="section-settings" data-tab="section">剖切</button></div>
+          <div class="inspector-scroll">
+            <div class="selection-details"><div class="selection-caption"><span id="selection-type">整车模型</span><button id="clear-selection" class="icon-button" title="清除选择" aria-label="清除选择" hidden><i data-lucide="x"></i></button></div><h3 id="selection-name">豹 2 早期原型</h3><div id="selection-id">LEOPARD_2_EARLY_PROTOTYPE</div><p id="selection-description">基于四视图重建的早期原型方案。</p><div id="selection-actions" class="selection-actions" hidden><button class="command" id="isolate"><i data-lucide="scan-line"></i><span>单独查看</span></button><button class="icon-button" id="hide-selected" title="隐藏选中部件" aria-label="隐藏选中部件"><i data-lucide="eye-off"></i></button><button class="icon-button" id="focus-selected" title="聚焦选中部件" aria-label="聚焦选中部件"><i data-lucide="focus"></i></button></div></div>
+            <div id="model-settings" role="tabpanel" aria-labelledby="tab-model">
+              <section class="settings-section"><div class="section-heading"><h3>分解视图</h3><output id="explode-value" for="explode">0<span>%</span></output></div><input id="explode" type="range" min="0" max="100" value="0" aria-label="分解程度" /><div class="range-labels"><span>装配</span><span>爆炸</span><span>零件平铺</span></div><div class="explode-presets"><button data-explode="0" class="active">装配</button><button data-explode="35">展开</button><button data-explode="100">平铺</button></div></section>
+              <section class="settings-section"><div class="section-heading"><h3>显示</h3><i data-lucide="contrast"></i></div><div class="field-heading"><label for="opacity">不透明度</label><output id="opacity-value" for="opacity">100%</output></div><input id="opacity" type="range" min="10" max="100" value="100" aria-label="不透明度" /><label class="switch-row"><span>自动旋转</span><input id="auto-rotate" type="checkbox" role="switch" /></label><label class="switch-row"><span>地面网格</span><input id="ground-grid" type="checkbox" role="switch" checked /></label></section>
+              <section class="settings-section"><div class="section-heading"><h3>机械姿态</h3><i data-lucide="rotate-3d"></i></div><div class="field-heading"><label for="yaw">炮塔旋转</label><output id="yaw-value" for="yaw">0°</output></div><input id="yaw" type="range" min="-180" max="180" value="0" aria-label="炮塔旋转角度" /><div class="field-heading second-field"><label for="elevation">炮管俯仰</label><output id="elevation-value" for="elevation">0°</output></div><input id="elevation" type="range" min="-9" max="20" value="0" aria-label="炮管俯仰角度" /></section>
+            </div>
+            <div id="section-settings" role="tabpanel" aria-labelledby="tab-section" hidden><section class="settings-section"><label class="switch-row section-switch"><h3>剖切面</h3><input id="clip-enabled" type="checkbox" role="switch" /></label><div class="field-heading"><span>剖切轴向</span></div><div class="axis-modes" role="group" aria-label="剖切轴向"><button data-axis="x" class="active" aria-pressed="true">X</button><button data-axis="y" aria-pressed="false">Y</button><button data-axis="z" aria-pressed="false">Z</button></div><div class="field-heading second-field"><label for="clip-position">平面位置</label><output id="clip-value" for="clip-position">0%</output></div><input id="clip-position" type="range" min="-100" max="100" value="0" aria-label="剖切位置" /><label class="switch-row"><span>反转剖切方向</span><input id="clip-flip" type="checkbox" role="switch" /></label><label class="switch-row"><span>显示剖切平面</span><input id="clip-plane" type="checkbox" role="switch" checked /></label></section></div>
+            <section class="settings-section dimensions"><div class="section-heading"><h3>模型数据</h3><span class="small-tag">1:1</span></div><dl><div><dt>全长</dt><dd>9.613 <span>m</span></dd></div><div><dt>全宽</dt><dd>3.700 <span>m</span></dd></div><div><dt>炮轴高度</dt><dd>2.009 <span>m</span></dd></div><div><dt>履带节数</dt><dd>170</dd></div></dl></section>
+          </div>
+        </aside>
+        <button id="panel-backdrop" class="panel-backdrop" aria-label="关闭面板" hidden></button>
+      </main>
+      <footer class="statusbar"><div><span class="status-dot"></span><span id="scene-status">载入中</span><span class="footer-divider"></span><span id="visible-count">-- / -- 部件</span></div><div><span id="render-status">WebGL</span><span class="footer-divider"></span><button id="about-footer">模型来源<i data-lucide="arrow-up-right"></i></button></div></footer>
+      <div id="toast" role="status" hidden></div>
+      <dialog id="about-dialog"><div class="dialog-heading"><h2>模型来源</h2><button id="close-about" class="icon-button" aria-label="关闭模型来源"><i data-lucide="x"></i></button></div><p>豹 2 早期原型模型来自本项目的可编辑 Blender 文件，依据提供的四视图及公开参考照片重建。确切原型编号未能确认；未标注的细节包含估计。</p><dl><div><dt>比例与单位</dt><dd>1:1 / 米</dd></div><div><dt>可独立部件</dt><dd id="about-parts">--</dd></div><div><dt>参考项目</dt><dd><a href="https://github.com/ashemag/human-atlas" target="_blank" rel="noreferrer">ashemag / human-atlas<i data-lucide="external-link"></i></a></dd></div></dl><p class="source-note">剖切仅改变显示。模型不包含完整发动机、传动系统或乘员舱内部结构。</p><button id="about-done" class="command">关闭</button></dialog>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
